@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School Admission Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8ed;
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .form-container {
+    background-color: #d9f1b6;
+    border-radius: 10px;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+    padding: 100px;
+    width: 400px;
+    max-width: 100%;
+  }
+  .form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .form-group {
+    margin-bottom: 19px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #710505;
+  }
+  input[type="text"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 3px solid #7bb5ef;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #e65100;
+	color: black;
+	border-top-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+  }
+</style>
+</head>
+<body>
+<div class="form-container">
+  <h1 class="form-title">School Admission Form</h1>
+  <form>
+    <div class="form-group">
+      <label for="student_name">Student Name</label>
+      <input type="text" id="student_name" name="student_name" required>
+    </div>
+    <div class="form-group">
+      <label for="parent_email">Parent Email</label>
+      <input type="email" id="parent_email" name="parent_email" required>
+    </div>
+    <div class="form-group">
+      <label for="grade">Grade Applying For</label>
+      <select id="grade" name="grade" required>
+        <option value="">Select Grade</option>
+        <option value="1">Grade 1</option>
+        <option value="2">Grade 2</option>
+        <option value="3">Grade 3</option>
+        <!-- Add more options as needed -->
+      </select>
+    </div>
+    <button type="submit">Submit</button>
+	<button type="reset" value="reset now">Reset now</button>
+  </form>
+</div>
+</body>
+</html>
